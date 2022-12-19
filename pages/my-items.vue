@@ -4,7 +4,8 @@
 
 <script>
 export default {
-    name:"MyItemsPage"
+  name: "MyItemsPage",
+  layout: "no-nav",
 };
 </script>
 
