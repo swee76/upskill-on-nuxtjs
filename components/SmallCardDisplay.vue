@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <h3 class="header">{{ cardSection.title }}</h3>
+    <h3 class="header">{{ cardsSection.title }}</h3>
     <div class="card-container">
       <SmallCard
-        v-for="card in cardSection.cards"
+        v-for="card in cardsSection.cards"
         :key="card.id"
         :card="card"
       />
@@ -14,7 +14,7 @@
 <script>
 export default {
   name: "SmallCardDisplay",
-  props: ["cardSection"],
+  props: ["cardsSection"],
 };
 </script>
 

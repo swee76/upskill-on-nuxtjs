@@ -2,14 +2,13 @@
   <div>
     <Nav />
     <div class="container">
-      <Hero />
       <LargeCardDisplay
-        v-for="largeCard in largeCardInfo"
+        v-for="largeCard in largeCardInfo.slice(0, 1)"
         :key="largeCard.id"
         :cardsSection="largeCard"
       />
       <SmallCardDisplay
-        v-for="smallCard in smallCardInfo"
+        v-for="smallCard in smallCardInfo.slice(0, 1)"
         :key="smallCard.id"
         :cardsSection="smallCard"
       />
@@ -20,7 +19,7 @@
 <script>
 import { largeCardSections, smallCardSections } from "@/assets/data.js";
 export default {
-  name: "IndexPage",
+  name: "ProductPage",
   data() {
     return {
       largeCardInfo: largeCardSections,
@@ -29,3 +28,5 @@ export default {
   },
 };
 </script>
+
+<style></style>
