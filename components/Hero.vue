@@ -28,16 +28,17 @@ export default {
   position: relative;
   display: flex;
   padding: 5rem 0;
+  margin-bottom: 6rem;
   align-items: flex-start;
   justify-content: space-between;
 }
 .text-container {
   width: 50%;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .header {
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .snippet {
   color: grey;
