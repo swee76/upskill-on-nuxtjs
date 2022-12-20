@@ -10,7 +10,7 @@
         <div class="info-box">
           <h1>{{ product.title }}</h1>
           <p class="snippet">{{ product.snippet }}</p>
-          <!-- <RentModal :product="product" /> -->
+          <RentModal :product="product" />
         </div>
       </div>
       <div class="whats-included-container">
@@ -107,19 +107,7 @@ p {
   color: rgba(0, 0, 0, 0.774);
   margin-top: 1rem;
 }
-button {
-  width: 100%;
-  border: none;
-  padding: 0.5rem;
-  color: white;
-  font-weight: 700;
-  padding: 1rem 4rem;
-  border-radius: 100rem;
-  background-color: rgb(231, 81, 43);
-  color: white;
-  font-weight: 700;
-  transition: 0.5s;
-}
+
 .description-container {
   margin-top: 3rem;
   color: grey;
