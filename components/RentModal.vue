@@ -35,7 +35,17 @@
                   :attributes="attrs"
                 />
               </div>
-              <b-button type="is-danger" size="is-medium">Order</b-button>
+              <b-button
+                type="is-danger"
+                size="is-medium"
+                @click="
+                  () => {
+                    addItem(product.id);
+                    isCardModalActive = false;
+                  }
+                "
+                >Order</b-button
+              >
             </div>
           </div>
         </div>
@@ -45,7 +55,9 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
+  props: ["product"],
   data() {
     return {
       isCardModalActive: false,
@@ -57,6 +69,9 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    ...mapMutations(["addItem"]),
   },
 };
 </script>
